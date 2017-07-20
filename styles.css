@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "JF Flat"; /* Имя шрифта */
+    src: url(fonts/JF-Flat-regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #f6704b;
+}
+.main {
+    width: 380px;
+    margin: 35px auto;
+    font-family: "JF Flat", sans-serif;
+}
+.accordion {
+    height: 100px;
+}
+.accordion:hover {
+    cursor: pointer;
+}
+.accordion:nth-child(1), .accordion-content:nth-child(2) {
+    background: #620808;
+    color: #ffe9c1;
+}
+.accordion:nth-child(3), .accordion-content:nth-child(4) {
+    background: #a53f3f;
+    color: #f4ce74;
+}
+.accordion:nth-child(5), .accordion-content:nth-child(6) {
+    background: #f4ce74;
+    color: #620808;
+}
+.accordion:nth-child(7), .accordion-content:nth-child(8) {
+    background: #ffe9c1;
+    color: #a53f3f;
+}
+.accordion:nth-child(9), .accordion-content:nth-child(10) {
+    background: #d5441c;
+    color: #ffe9c1;
+}
+.accordion img {
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.accordion p {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.accordion-content {
+    height: 165px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 12px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.7) inset;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.active {
+    box-shadow: 0 0 5px rgba(255,255,255,0.5) inset;
+}
